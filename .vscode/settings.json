@@ -1,0 +1,20 @@
+{
+    "cSpell.words": [
+        "bson",
+        "errcheck",
+        "funlen",
+        "goconst",
+        "gocritic",
+        "godotenv",
+        "gofmt",
+        "gofumpt",
+        "goimports",
+        "golines",
+        "gomod",
+        "labstack",
+        "Pongpon",
+        "stretchr",
+        "usecase",
+        "usecases"
+    ]
+}

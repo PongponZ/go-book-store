@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: app-service
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    depends_on:
+      - mongodb
+    environment:
+      - MONGO_HOST=mongodb
+      - MONGO_PORT=27017
+      - MONGO_USERNAME=root
+      - MONGO_PASSWORD=root
+      - MONGO_DATABASE=BookStore
+      - MONGO_USER_COLLECTION=users
+    networks:
+      - go-book-store-network
+  mongodb:
+    image: mongo:8.0.8
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+      MONGO_INITDB_DATABASE: book_store
+      MONGO_INITDB_USER_COLLECTION: users
+    ports:
+      - "27017:27017"
+    networks:
+      - go-book-store-network
+
+networks:
+
+  go-book-store-network:
+    driver: bridge
