@@ -37,3 +37,9 @@ func (u *userUsecase) Update(ctx context.Context, user *entity.User) error {
 func (u *userUsecase) DeleteByID(ctx context.Context, id string) error {
 	return u.userRepository.DeleteByID(ctx, id)
 }
+
+func (u *userUsecase) SuperDuperFunc(ctx context.Context, id string) {
+	u.userRepository.Create(ctx, &entity.User{
+		ID: id,
+	})
+}
