@@ -32,9 +32,6 @@ formatters:
       max-len: 200
       tab-len: 16
 output:
-  formats:
-    json:
-      path: stderr
   sort-order:
     - severity
     - file
