@@ -33,8 +33,10 @@ formatters:
     golines:
       max-len: 200
       tab-len: 16
+
 issues:
   new-from-rev: HEAD
+
 output:
   formats:
     tab:
