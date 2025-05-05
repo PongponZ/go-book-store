@@ -35,6 +35,8 @@ output:
   formats:
     tab:
       path: stdout
+      print-linter-name: true
+      colors: true
   show-stats: true
 severity:
   default: error
