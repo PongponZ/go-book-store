@@ -37,3 +37,62 @@ func (u *userUsecase) Update(ctx context.Context, user *entity.User) error {
 func (u *userUsecase) DeleteByID(ctx context.Context, id string) error {
 	return u.userRepository.DeleteByID(ctx, id)
 }
+
+func (u *userUsecase) LongFunc() {
+	/*
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+		Error LongFunc
+	*/
+}
