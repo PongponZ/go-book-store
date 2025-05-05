@@ -2,13 +2,15 @@ name: lint
 
 on:
   pull_request:
+    types: [opened, synchronize, reopened]
     paths:
+      - "**/*.go"
       - "**.go"
 
 permissions:
   contents: read
   pull-requests: read
-
+  
 jobs:
   golangci:
     name: lint
@@ -22,3 +24,4 @@ jobs:
       uses: golangci/golangci-lint-action@v8
       with:
         version: v2.1.5
+        only-new-issues: true
