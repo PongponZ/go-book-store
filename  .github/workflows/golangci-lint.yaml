@@ -2,9 +2,7 @@ name: lint
 
 on:
   pull_request:
-    paths:
-      - "**.go"
-      - "**/*.go"
+
 
 permissions:
   contents: read
