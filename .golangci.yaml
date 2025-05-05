@@ -32,9 +32,6 @@ formatters:
       max-len: 200
       tab-len: 16
 output:
-  formats:
-    tab:
-      path: stderr
   sort-order:
     - severity
     - file

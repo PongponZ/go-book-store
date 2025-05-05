@@ -22,4 +22,4 @@ jobs:
       uses: golangci/golangci-lint-action@v8
       with:
         version: v2.1
-        args: --output.text.path stderr
+        args: --output.text.path stdout
