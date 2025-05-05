@@ -33,13 +33,12 @@ formatters:
       tab-len: 16
 output:
   formats:
-    tab:
+    json:
       path: stderr
   sort-order:
     - severity
     - file
-    - linter
-  
+    - linter  
 severity:
   default: error
   rules:
