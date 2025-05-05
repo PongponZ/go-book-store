@@ -32,11 +32,10 @@ formatters:
       max-len: 200
       tab-len: 16
 output:
-  sort-order:
-    - severity
-    - file
-    - linter
-  
+  formats:
+    tab:
+      path: stdout
+  show-stats: true
 severity:
   default: error
   rules:
