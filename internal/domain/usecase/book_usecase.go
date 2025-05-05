@@ -1,6 +1,10 @@
 package usecase
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/PongponZ/go-book-store/internal/domain/constant"
+)
 
 type IBookUsecase interface{}
 
@@ -11,13 +15,13 @@ func NewBookUsecase() IBookUsecase {
 }
 
 func (u *bookUsecase) SomeFunc1(bookType string) {
-	if bookType == "fiction" {
+	if bookType == constant.BookTypeFiction {
 		fmt.Println("hi, SomeFunc1")
 	}
 }
 
 func (u *bookUsecase) SomeFunc2(bookType string) {
-	if bookType == "fiction" {
+	if bookType == constant.BookTypeFiction {
 		fmt.Println("hi, SomeFunc2")
 	}
 }

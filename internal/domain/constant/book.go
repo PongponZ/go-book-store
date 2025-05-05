@@ -1,7 +1,7 @@
 package constant
 
 const (
-	bookTypeFiction    = "fiction"
+	BookTypeFiction    = "fiction"
 	BookTypeNonFiction = "non-fiction"
 	BookTypeTextbook   = "textbook"
 	BookTypeReference  = "reference"
