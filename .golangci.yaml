@@ -34,7 +34,7 @@ formatters:
 output:
   formats:
     tab:
-      path: stdout
+      path: stderr
       print-linter-name: true
       colors: true
   show-stats: true
